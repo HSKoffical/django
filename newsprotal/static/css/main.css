@@ -1,0 +1,26 @@
+*{
+background-color:yellow;
+}
+img{
+width:220px;
+hight:220px;
+}
+h1{
+color:red;
+text-align:center;
+}
+.imgs{
+padding-top: 60px;
+display:flex;
+justify-content: space-around;
+}
+a{
+text-decoration:none;
+color:hotpink;
+
+}
+.link{
+padding:10px;
+display:flex;
+justify-content:space-around;
+}
