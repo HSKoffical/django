@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies Form</title>
+    <link rel="stylesheet" href="{%static 'css/movies_form.css'%}">
+</head>
+<body>
+{%if submmited%}
+<h1>{{name}} Information submitted successfully</h1>
+<button onclick="window.history.back()">back</button>
+{%else%}
+<form method="POST">
+    {{form.as_p}}
+    {%csrf_token%}
+    <input type="submit" name="" value="submit">
+    <input type="reset" name="" value="Rest">
+</form>
+{%endif%}
+</body>
+</html>
